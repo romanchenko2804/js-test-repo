@@ -45,7 +45,7 @@
 // function checkForSpam(message) {
 //   let result;
 //   // Change code below this line
-//   if (message.includes('spam' && 'sale')) {
+//   if (message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale')) {
 //   result = true;
 //   } else {
 //   result = false;
@@ -57,4 +57,4 @@
 //   return result;
 // }
 
-// checkForSpam('Get best sale offers now!');
+// checkForSpam('Вам пришло уведомление с магазина NIKE - там сейчас огромный - SALE!!!');

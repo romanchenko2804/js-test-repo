@@ -586,4 +586,143 @@
 
 // console.log(`Общая потраченая сумма в магазине ${totalSpent}`);
 
-// ***
+
+
+// *** ARRAYS
+
+//                 [0]      [1]     [2]     [3]
+// const clients = ["Mango", "Poly", "Ajax", "Banana"];
+
+
+// // вывод елементов масива в консоль под их индексами
+// console.log(clients[0]);
+// console.log(clients[1]);
+// console.log(clients[2]);
+// console.log(clients[3]); 
+// console.log(clients[4]); // undefined
+
+
+// // замена элементов масива
+// clients[1] = 'Kiwi';
+// clients[2] = 'Orange';
+
+// console.log(clients);
+
+
+// // длинна масива
+// console.log(clients.length);
+
+// // ***
+// let age;
+// console.log(age);
+// // ***
+// // Индекс последнего элемента
+
+// const fruits = ["Kiwi", "Orange", "Banana", "Mango"];
+// const lastElementIndex = fruits.length - 1;
+// console.log(lastElementIndex); 
+// console.log(fruits[lastElementIndex]);
+
+
+// Итерация по массиву
+
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log(clients[i]);
+// }
+
+
+// Цикл for...of
+
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (const client of clients) {
+//   console.log(client);
+// }
+
+// const string = "javascript";
+
+// for (const character of string) {
+//   console.log(character);
+// }
+
+
+// Операторы break и continue
+
+// const clients = ["Mango", "Poly", "Ajax"];
+// const clientNameToFind = "Poly";
+// let message;
+
+// for (const client of clients) {
+//   // На каждой итерации будем проверять совпадает ли элемент массива с
+//   // именем клиента. Если совпадает то мы записываем в message сообщение
+//   // об успехе и делаем break чтобы не искать дальше
+//   if (client === clientNameToFind) {
+//     message = "Клиент с таким именем есть в базе данных!";
+//     break;
+//   }
+
+//   // Если они не совпадают то запишем в message сообщение об отсутствии имени
+//   message = "Клиента с таким именем нету в базе данных!";
+// }
+
+// console.log(message); // "Клиент с таким именем есть в базе данных!"
+
+
+// const family = ["Arsenij", "Nataha", "Boss"];
+// const childInFamily = "Arsenij";
+// let message;
+
+// for (const member of family) {
+//     if (member === childInFamily) {
+//         message = 'Ребенок обнаружен - СПИТ!';
+//     }
+
+//     break;
+
+//     message = 'Ребенок не обнаруженю';
+// }
+
+// console.log(message);
+
+// const clients = ["Mango", "Ajax", "Poly"];
+
+// for (let i = 0; i < clients.length; i += 1) {
+//   console.log(clients[i]);
+// }
+
+
+
+
+// let a = 5;
+// let b = a;
+// console.log(a); 
+// console.log(b); 
+
+// a = 10;
+// console.log(a); 
+// console.log(b);
+
+
+
+
+const a = ["Mango"];
+// Так как a это массив, в b записывается ссылка на уже существующий
+// массив в памяти. Теперь a и b указывают на один и тот же массив.
+const b = a;
+console.log(a); // ["Mango"]
+console.log(b); // ["Mango"]
+
+// Изменим массив, добавив еще один элемент, используя указатель из a
+a.push("Poly");
+console.log(a); // ["Mango", "Poly"]
+
+// b также изменилось, потому что b, как и a,
+// просто содержит ссылку на одно и то же место в памяти
+console.log(b); // ["Mango", "Poly"]
+
+// Результат повторяется
+b.push("Ajax");
+console.log(a); // ["Mango", "Poly", "Ajax"]
+console.log(b); // ["Mango", "Poly", "Ajax"]
