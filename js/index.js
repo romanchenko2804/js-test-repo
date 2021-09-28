@@ -588,9 +588,9 @@
 
 
 
-// *** ARRAYS
+// *** ARRAYS ****************************************************************************************************
 
-//                 [0]      [1]     [2]     [3]
+//                   [0]      [1]     [2]     [3]
 // const clients = ["Mango", "Poly", "Ajax", "Banana"];
 
 
@@ -616,6 +616,7 @@
 // let age;
 // console.log(age);
 // // ***
+
 // // Индекс последнего элемента
 
 // const fruits = ["Kiwi", "Orange", "Banana", "Mango"];
@@ -669,9 +670,21 @@
 
 // console.log(message); // "Клиент с таким именем есть в базе данных!"
 
+// const clients = ["Mango", "Poly", "Ajax"];
+// const clientNameToFind = "Poly";
+// let message = "Клиента с таким именем нету в базе данных!";
 
-// const family = ["Arsenij", "Nataha", "Boss"];
+// for (const client of clients) {
+//   if (client === clientNameToFind) {
+//     message = "Клиент с таким именем есть в базе данных!";
+//     break;
+//   }
+// }
+// console.log(message);
+
 // const childInFamily = "Arsenij";
+// const family = ["Son", "Mother", "Father"];
+// const childInFamily = "Son";
 // let message;
 
 // for (const member of family) {
@@ -693,6 +706,29 @@
 // }
 
 
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] < threshold) {
+//     continue;
+//   }
+
+//   console.log(`Число больше чем ${threshold}: ${numbers[i]}`); // 18, 29, 34
+// }
+
+// const salary = [500, 1000, 1564, 4565, 4754, 5545, 1254, 985, 7854, 2354];
+// const splitNumber = 2500;
+
+// for (let i = 0; i < salary.length; i += 1) {
+//     if (salary[i] < splitNumber) {
+//     continue;
+//     }
+    
+//     console.log(`Число больше чем ${splitNumber}: ${salary[i]}`);
+// }
+// console.log(salary.length);
+
 
 
 // let a = 5;
@@ -707,22 +743,246 @@
 
 
 
-const a = ["Mango"];
-// Так как a это массив, в b записывается ссылка на уже существующий
-// массив в памяти. Теперь a и b указывают на один и тот же массив.
-const b = a;
-console.log(a); // ["Mango"]
-console.log(b); // ["Mango"]
+// const a = ["Mango"];
+// // Так как a это массив, в b записывается ссылка на уже существующий
+// // массив в памяти. Теперь a и b указывают на один и тот же массив.
+// const b = a;
+// console.log(a); // ["Mango"]
+// console.log(b); // ["Mango"]
 
-// Изменим массив, добавив еще один элемент, используя указатель из a
-a.push("Poly");
-console.log(a); // ["Mango", "Poly"]
+// // Изменим массив, добавив еще один элемент, используя указатель из a
+// a.push("Poly");
+// console.log(a); // ["Mango", "Poly"]
 
-// b также изменилось, потому что b, как и a,
-// просто содержит ссылку на одно и то же место в памяти
-console.log(b); // ["Mango", "Poly"]
+// // b также изменилось, потому что b, как и a,
+// // просто содержит ссылку на одно и то же место в памяти
+// console.log(b); // ["Mango", "Poly"]
 
-// Результат повторяется
-b.push("Ajax");
-console.log(a); // ["Mango", "Poly", "Ajax"]
-console.log(b); // ["Mango", "Poly", "Ajax"]
+// // Результат повторяется
+// b.push("Ajax");
+// console.log(a); // ["Mango", "Poly", "Ajax"]
+// console.log(b); // ["Mango", "Poly", "Ajax"]
+
+
+
+// ***** Методы split() и join()
+
+// const name = "Mango";
+// console.log(name.split("")); // ["M", "a", "n", "g", "o"]
+
+// const message = "JavaScript это интересно";
+// console.log(message.split(" "));
+
+// const words = ["JavaScript", "это", "интересно"];
+// console.log(words.join("")); // "JavaScriptэтоинтересно"
+// console.log(words.join(" ")); // "JavaScript это интересно"
+// console.log(words.join("-")); // "JavaScript-это-интересно"
+
+
+// ***** Метод indexOf()
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.indexOf("Poly")); 
+// console.log(clients.indexOf("Monkong")); 
+
+
+//  ***** Метод includes()
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.includes("Poly"));
+// console.log(clients.includes("Monkong")); 
+
+// ***** Проверка множественных условий с includes()
+
+// Выносим варианты в массив
+// const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
+// const fruit = "cherry";
+// // Проверяем наличие элемента
+// const hasFruit = redFruits.includes(fruit);
+
+// if (hasFruit) {
+//   console.log(`${fruit} is a red fruit!`);
+// }
+
+
+// ***** Методы push() и pop()
+
+
+// const numbers = [];
+
+// numbers.push(1);
+// console.log(numbers);
+
+// numbers.push(2);
+// console.log(numbers);
+
+// numbers.push(3);
+// console.log(numbers);
+
+// numbers.push(4);
+// console.log(numbers);
+
+// numbers.push(5);
+// console.log(numbers);
+
+
+
+// const numbers = [1, 2, 3, 4, 5];
+
+// console.log(numbers.pop()); //  5
+// console.log(numbers); // [1, 2, 3, 4]
+
+// console.log(numbers.pop()); //  4
+// console.log(numbers); // [1, 2, 3]
+
+// console.log(numbers.pop()); //  3
+// console.log(numbers); // [1, 2]
+
+// console.log(numbers.pop()); //  2
+// console.log(numbers); // [1]
+
+// console.log(numbers.pop()); //  1
+// console.log(numbers); // []
+
+
+
+// ***** Метод slice()
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice(1, 3));
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// console.log(clients.slice(-2)); // ["Poly", "Kiwi"]
+
+
+
+// ***** Метод splice - Удаление
+
+// const scores = [1, 2, 3, 4, 5];
+
+// // Удаляем три элемента массива, начиная с первого элемента (индекс 0)
+// const deletedScores = scores.splice(0, 3);
+
+// // Теперь массив scores содержит два элемента
+// console.log(scores); // [4, 5]
+
+// // А массив deletedScores содержит три удаленных элемента
+// console.log(deletedScores); // [1, 2, 3]
+
+
+//    ----------------- Добавление
+
+// const colors = ["red", "green", "blue"];
+
+// colors.splice(2, 0, "purple");
+// console.log(colors); // ["red", "green", "purple", "blue"]
+
+// const colors = ["red", "green", "blue"];
+
+// colors.splice(1, 0, "yellow", "pink");
+// console.log(colors); // ["red", "yellow", "pink", "green", "blue"]
+
+
+//  ------------------------- Замена
+
+// const languages = ["C", "C++", "Java", "JavaScript"];
+
+// // Заменяем элемент с индексом 1 на новый
+// languages.splice(1, 1, "Python");
+// console.log(languages); // ["C", "Python", "Java", "JavaScript"]
+
+// // Заменяем один элемент (с индексом 2) на несколько
+// languages.splice(2, 1, "C#", "Swift", "Go");
+// console.log(languages); // ["C", "Python", "C#", "Swift", "Go", "JavaScript"]
+
+
+
+// ***** Метод concat()
+
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Monkong", "Singu"];
+
+// const allClientsWithOldFirst = oldClients.concat(newClients);
+// console.log(allClientsWithOldFirst); // ["Mango", "Ajax", "Poly", "Kiwi", "Monkong", "Singu"]
+
+// const allClientsWithNewFirst = newClients.concat(oldClients);
+// console.log(allClientsWithNewFirst); // ["Monkong", "Singu", "Mango", "Ajax", "Poly", "Kiwi"]
+
+// console.log(oldClients); // ["Mango", "Ajax", "Poly", "Kiwi"]
+// console.log(newClients); // ["Monkong", "Singu"]
+
+
+// ***** многомерные масивы
+
+// const matrix = [
+//     [1, 2, 3],
+//     [4, 5, 6],
+//     [7, 8, 9]
+// ];
+
+// console.log(matrix[0][0]);
+// console.log(matrix[1][1]);
+// console.log(matrix[2][2]);
+
+
+// ********************************** РЕПЕТА
+
+// const friends = ['Mango', 'Kiwi', 'Apple', 'Banana'];
+// const lastIndex = friends.length - 1;
+
+
+// console.log(friends);
+
+// console.log(friends.length);
+
+// console.table(friends);
+
+// console.log(lastIndex);
+
+// console.log(friends[0]);
+
+// friends[3] = 'Cherry';
+// console.log(friends);
+
+
+
+
+
+// let a = 10;
+// let b = a;
+// console.log(a);
+// console.log(b);
+
+// a = 20;
+// console.log(a);
+
+// const a = [1, 2, 3];
+// const b = a;
+// console.log('a', a);
+// console.log('b', b);
+
+// a[0] = 500;
+// console.log('a', a);
+// console.log('b', b);
+
+
+
+// const friends = ['Mango', 'Kiwi', 'Apple', 'Banana'];
+// console.table(friends);
+// // const lastIndex = friends.length - 1;
+
+// for (let i = 0; i < friends.length; i += 1) {
+//     friends[i] += '-1';
+// }
+
+// console.table(friends);
+
+
+
+// const friends = ['Mango', 'Kiwi', 'Apple', 'Banana'];
+
+// for (let friend of friends) {
+//     console.log(friend);
+// }
+
+// console.table(friends);
