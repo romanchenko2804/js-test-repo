@@ -5,7 +5,6 @@
 // console.log(age);
 // console.log(typeof age);
 
-
 // const message = "JavaScript is awesome!";
 // alert(message);
 
@@ -37,7 +36,7 @@
 // value += 7;
 // console.log(value);
 
-// Операторы сравнения***********************************************************
+//✅✅✅ Операторы сравнения***********************************************************
 
 // const x = 5;
 // const y = 10;
@@ -51,7 +50,6 @@
 // console.log("x === z:", x === z); // true
 // console.log("x !== y:", x !== y); // true
 // console.log("x !== z:", x !== z); // false
-
 
 // const valueB = "777 or ass";
 // console.log(Number(valueB)); // NaN
@@ -67,23 +65,20 @@
 // console.log(Number.parseFloat("12.46qwe79")); // 12.46
 // console.log(Number.parseFloat("qweqwe")); // NaN
 
-
-//          parseInt***********************************************************
+//   ✅✅✅       parseInt***********************************************************
 
 // let elemWidth = '50px';
 // const result = Number.parseInt(elemWidth);
 // // elemWidth = Number.parsInt(elemWidth);
 // console.log(result);
 
-
-//          parseFloat***********************************************************
+//     ✅✅✅     parseFloat***********************************************************
 
 // let elementHeight = '123.45em';
 // elementHeight = Number.parseFloat(elementHeight);
 // console.log('elementHeight:', elementHeight);
 
-
-//          toFixed***********************************************************
+//     ✅✅✅     toFixed***********************************************************
 
 // let salary = 1500.48789;
 // salary = Number(salary.toFixed(1));
@@ -91,11 +86,9 @@
 // // console.log(salary.toFixed());
 // console.log(salary);
 
-
-//      Math***********************************************************
+//    ✅✅✅  Math***********************************************************
 
 // console.log(Math.PI);
-
 
 // const a = 5;
 // const c = 5;
@@ -104,8 +97,7 @@
 
 // console.log(calc); //console.log(a ** c);
 
-
-//      test***********************************************************
+//  ✅✅✅    test***********************************************************
 
 // const base = prompt('Введи число');
 // console.log(Number(base));
@@ -115,8 +107,7 @@
 
 // console.log(base ** exponent);
 
-
-//      psevdoGeneration numbers***********************************************************
+//   ✅✅✅   psevdoGeneration numbers***********************************************************
 
 // const max = 77;
 // const min = 55;
@@ -124,8 +115,7 @@
 
 // console.log(score);
 
-
-//          strings***********************************************************
+//     ✅✅✅     strings***********************************************************
 
 // const message = 'В этой строке 26 символовю';
 // console.log(message.length);
@@ -147,8 +137,7 @@
 
 // console.log(welcomeMsg);
 
-
-// нормализация с методом toLowerCase()***********************************************************
+// ✅✅✅ нормализация с методом toLowerCase()***********************************************************
 
 // const brand = 'SamSung'; // let brand = prompt('Давай бренд);
 // const normalizeBrand = brand.toLowerCase(); // brand = nrand.toLowerCase();
@@ -156,20 +145,20 @@
 // console.log(normalizeBrand); // console.log(brand);
 
 // let brand = 'SamSuNG';
-// brand = brand[0] + brand.slice(1).toLowerCase(); 
+// brand = brand[0] + brand.slice(1).toLowerCase();
 
 // console.log(brand);
 
 // ***
 
-//  поиск в строке с методом includes***********************************************************
+// ✅✅✅ поиск в строке с методом includes***********************************************************
 
 // ***
 
 // const blacklistedWord1 = 'спам';
 // const blacklistedWord2 = 'распродажа';
 
-// const string1 = 'Это не спам.'; 
+// const string1 = 'Это не спам.';
 // const string2 = 'Это супер РАСПРОДАЖА!';
 // const string3 = 'Рекламная компания #lightWings.';
 
@@ -185,7 +174,7 @@
 
 // ***
 
-//          логические операторы*****************************************************************
+//    ✅✅✅      логические операторы*****************************************************************
 
 // ***
 
@@ -217,7 +206,7 @@
 
 // ***
 
-//      test***********************
+//   ✅✅✅   test***********************
 // написать скрипт, который проверяет вложение числа в отрезок обозначеный х1 и х2.
 
 // const x1 = 7;
@@ -230,7 +219,7 @@
 // console.log(`Число ${ number } попадает в отрезок до ${x1} или после ${ x2 }?`, number < x1 || number > x2);
 
 // ***
-    
+
 // написать скрипт, который проверяет возможность открыть чат с пользователем
 // для этого пользователь должен быть:
 // - другом;
@@ -262,7 +251,7 @@
 
 // ***
 
-// операторы ветвления: if, if else, else
+// ✅✅✅ операторы ветвления: if, if else, else
 
 // // IF
 // if (50 > 8) {
@@ -290,7 +279,7 @@
 //     console.log('Уровень 4')
 // }
 
-// тернарний оператор
+// ✅✅✅ тернарний оператор
 
 // const balance = 1000;
 
@@ -308,13 +297,13 @@
 
 // ***
 
-// блочная область видимости переменных
+//✅✅✅  блочная область видимости переменных
 
 // if (true) {
 //     const a = 5;
 // }
 
-// console.log(a);  
+// console.log(a);
 // данный код не работает, так как переменная обьявлена в {} находится в блочной области видимости, а консоль лог находится в глобальной области видимости
 // рабочая версия кода указана ниже (принцип матрешки)
 
@@ -327,7 +316,7 @@
 //     console.log(b);
 // }
 
-// *** Цикл с предусловием - while
+// ✅✅✅ *** Цикл с предусловием - while
 
 // let clientCounter = 15;
 // const maxClients = 25;
@@ -337,8 +326,7 @@
 //     clientCounter += 1;
 // }
 
-
-// *** Цикл с постусловием - do...while
+// ✅✅✅ *** Цикл с постусловием - do...while
 
 // let password = "";
 
@@ -348,8 +336,7 @@
 
 // console.log("Ввели пароль: ", password);
 
-
-// *** Цикл со счётчиком - for
+// ✅✅✅ *** Цикл со счётчиком - for
 
 // for (let i = 0; i <= 20; i += 5) {
 //   console.log(i);
@@ -369,8 +356,7 @@
 //   console.log(`${max} % ${i} = `, max % i);
 // }
 
-
-// *** Оператор - break
+//  ✅✅✅ *** Оператор - break
 
 // for (let i = 0; i <= 5; i += 1) {
 //   console.log(i);
@@ -382,7 +368,6 @@
 // }
 
 // console.log("Лог после цикла");
-
 
 // ***Оператор - continue
 
@@ -396,7 +381,7 @@
 //   console.log("Нечетное i: ", i);
 // }
 
-// ***  SWITCH
+// *** ✅✅✅  SWITCH
 
 // if...else...if
 // const stars = 1;
@@ -424,29 +409,28 @@
 //     case 1:
 //         price = 20;
 //         break;
-    
+
 //     case 2:
 //         price = 30;
 //         break;
-    
+
 //     case 3:
 //         price = 50;
 //         break;
-    
+
 //     case 4:
 //         price = 70;
 //         break;
-    
+
 //     case 5:
 //         price = 120;
 //         break;
-    
+
 //     default:
 //         console.log('Такого кол-ва звезд нет');
 // }
 
 // console.log(price);
-
 
 // const stars = 4;
 // let price
@@ -463,7 +447,6 @@
 
 // console.log(price);
 
-
 // const stars = 4;
 // let price
 
@@ -472,23 +455,23 @@
 //     case 2:
 //         price = 20;
 //         break;
-    
+
 //     case 3:
 //     case 4:
 //         price = 30;
 //         break;
-    
+
 //     case 5:
 //         price = 120;
 //         break;
-    
+
 //     default:
 //         console.log('Такого кол-ва звезд нет');
 // }
 
 // console.log(price);
 
-// *** Цикл FOR
+// ✅✅✅ *** Цикл FOR
 
 // for (let i = 0; i <= 7; i += 1) {
 //     console.log(i)
@@ -499,8 +482,7 @@
 //     console.log(i);
 // }
 
-
-// ***    TEST
+// *** ✅✅✅    TEST
 
 // const minSal = 500;
 // const maxSal = 5000;
@@ -518,7 +500,6 @@
 
 // console.log('totalSalary: ', totalSal);
 
-
 // const min = 0;
 // const max = 5;
 // let total = 0;
@@ -529,16 +510,14 @@
 //         continue;
 //      }
 
-   
 //     console.log('Четное: ', i);
 //     total += i; // агалогично - total = total + i;
-    
+
 // }
 
 // console.log('Total: ', total);
 
-
-// *** ЗАДАЧИ
+// *** ЗАДАЧИ ✅✅✅ 
 
 // ***1
 
@@ -586,30 +565,25 @@
 
 // console.log(`Общая потраченая сумма в магазине ${totalSpent}`);
 
-
-
-// *** ARRAYS ****************************************************************************************************
+//✅✅✅✅✅✅✅✅✅ *** ARRAYS ****************************************************************************************************
 
 //                   [0]      [1]     [2]     [3]
 // const clients = ["Mango", "Poly", "Ajax", "Banana"];
-
 
 // // вывод елементов масива в консоль под их индексами
 // console.log(clients[0]);
 // console.log(clients[1]);
 // console.log(clients[2]);
-// console.log(clients[3]); 
+// console.log(clients[3]);
 // console.log(clients[4]); // undefined
 
-
-// // замена элементов масива
+// //✅ замена элементов масива
 // clients[1] = 'Kiwi';
 // clients[2] = 'Orange';
 
 // console.log(clients);
 
-
-// // длинна масива
+// // ✅длинна масива
 // console.log(clients.length);
 
 // // ***
@@ -621,11 +595,10 @@
 
 // const fruits = ["Kiwi", "Orange", "Banana", "Mango"];
 // const lastElementIndex = fruits.length - 1;
-// console.log(lastElementIndex); 
+// console.log(lastElementIndex);
 // console.log(fruits[lastElementIndex]);
 
-
-// Итерация по массиву
+// ✅ Итерация по массиву
 
 // const clients = ["Mango", "Ajax", "Poly"];
 
@@ -633,8 +606,7 @@
 //   console.log(clients[i]);
 // }
 
-
-// Цикл for...of
+// ✅✅✅ Цикл for...of
 
 // const clients = ["Mango", "Ajax", "Poly"];
 
@@ -648,8 +620,7 @@
 //   console.log(character);
 // }
 
-
-// Операторы break и continue
+// ✅✅✅ Операторы break и continue
 
 // const clients = ["Mango", "Poly", "Ajax"];
 // const clientNameToFind = "Poly";
@@ -682,7 +653,6 @@
 // }
 // console.log(message);
 
-// const childInFamily = "Arsenij";
 // const family = ["Son", "Mother", "Father"];
 // const childInFamily = "Son";
 // let message;
@@ -705,7 +675,6 @@
 //   console.log(clients[i]);
 // }
 
-
 // const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
 // const threshold = 15;
 
@@ -724,24 +693,19 @@
 //     if (salary[i] < splitNumber) {
 //     continue;
 //     }
-    
+
 //     console.log(`Число больше чем ${splitNumber}: ${salary[i]}`);
 // }
 // console.log(salary.length);
 
-
-
 // let a = 5;
 // let b = a;
-// console.log(a); 
-// console.log(b); 
-
-// a = 10;
-// console.log(a); 
+// console.log(a);
 // console.log(b);
 
-
-
+// a = 10;
+// console.log(a);
+// console.log(b);
 
 // const a = ["Mango"];
 // // Так как a это массив, в b записывается ссылка на уже существующий
@@ -764,8 +728,7 @@
 // console.log(b); // ["Mango", "Poly", "Ajax"]
 
 
-
-// ***** Методы split() и join()
+// ***** ✅✅✅ Методы split() и join()
 
 // const name = "Mango";
 // console.log(name.split("")); // ["M", "a", "n", "g", "o"]
@@ -779,20 +742,19 @@
 // console.log(words.join("-")); // "JavaScript-это-интересно"
 
 
-// ***** Метод indexOf()
+// ***** ✅✅✅ Метод indexOf()
 
 // const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
-// console.log(clients.indexOf("Poly")); 
-// console.log(clients.indexOf("Monkong")); 
+// console.log(clients.indexOf("Poly"));
+// console.log(clients.indexOf("Monkong"));
 
-
-//  ***** Метод includes()
+//  ***** ✅✅✅ Метод includes()
 
 // const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // console.log(clients.includes("Poly"));
-// console.log(clients.includes("Monkong")); 
+// console.log(clients.includes("Monkong"));
 
-// ***** Проверка множественных условий с includes()
+// ***** ✅✅✅ Проверка множественных условий с includes()
 
 // Выносим варианты в массив
 // const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
@@ -804,9 +766,7 @@
 //   console.log(`${fruit} is a red fruit!`);
 // }
 
-
-// ***** Методы push() и pop()
-
+// ***** ✅✅✅ Методы push() и pop()
 
 // const numbers = [];
 
@@ -825,8 +785,6 @@
 // numbers.push(5);
 // console.log(numbers);
 
-
-
 // const numbers = [1, 2, 3, 4, 5];
 
 // console.log(numbers.pop()); //  5
@@ -844,9 +802,7 @@
 // console.log(numbers.pop()); //  1
 // console.log(numbers); // []
 
-
-
-// ***** Метод slice()
+// ***** ✅✅✅ Метод slice()
 
 // const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // console.log(clients.slice(1, 3));
@@ -854,9 +810,9 @@
 // const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // console.log(clients.slice(-2)); // ["Poly", "Kiwi"]
 
+// ***** ✅✅✅ Метод splice
 
-
-// ***** Метод splice - Удаление
+// ----------------------- Удаление ✅✅✅
 
 // const scores = [1, 2, 3, 4, 5];
 
@@ -869,8 +825,7 @@
 // // А массив deletedScores содержит три удаленных элемента
 // console.log(deletedScores); // [1, 2, 3]
 
-
-//    ----------------- Добавление
+//    ----------------- Добавление ✅✅✅
 
 // const colors = ["red", "green", "blue"];
 
@@ -882,8 +837,7 @@
 // colors.splice(1, 0, "yellow", "pink");
 // console.log(colors); // ["red", "yellow", "pink", "green", "blue"]
 
-
-//  ------------------------- Замена
+//  ------------------------- Замена ✅✅✅
 
 // const languages = ["C", "C++", "Java", "JavaScript"];
 
@@ -895,9 +849,7 @@
 // languages.splice(2, 1, "C#", "Swift", "Go");
 // console.log(languages); // ["C", "Python", "C#", "Swift", "Go", "JavaScript"]
 
-
-
-// ***** Метод concat()
+// ***** ✅✅✅ Метод concat()
 
 // const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // const newClients = ["Monkong", "Singu"];
@@ -911,8 +863,7 @@
 // console.log(oldClients); // ["Mango", "Ajax", "Poly", "Kiwi"]
 // console.log(newClients); // ["Monkong", "Singu"]
 
-
-// ***** многомерные масивы
+// ***** ✅✅✅ многомерные масивы
 
 // const matrix = [
 //     [1, 2, 3],
@@ -924,12 +875,176 @@
 // console.log(matrix[1][1]);
 // console.log(matrix[2][2]);
 
+// *********************************** Функции ✅✅✅✅✅✅✅✅✅
 
-// ********************************** РЕПЕТА
+// // 1. Объявление параметров x, y, z
+// function multiply(x, y, z) {
+//   console.log(`Результат умножения равен ${x * y * z}`);
+// }
+// // 2. Передача аргументов
+// multiply(2, 3, 5); // Результат умножения равен 30
+// multiply(4, 8, 12); // Результат умножения равен 384
+// multiply(17, 6, 25); // Результат умножения равен 2550
+
+
+// ***✅✅✅ Возврат значения
+
+// function multiply(x, y, z) {
+//   console.log("Код до return выполняется как обычно");
+
+//   // Возвращаем результат выражения умножения
+//   return x * y * z;
+
+//   console.log("Этот лог никогда не выполнится, он стоит после return");
+// }
+
+// // Результат работы функции можно сохранить в переменную
+// let result = multiply(2, 3, 5);
+// console.log(result); // 30
+
+// result = multiply(4, 8, 12);
+// console.log(result); // 384
+
+// result = multiply(17, 6, 25);
+// console.log(result); // 2550
+
+
+// *** ✅✅✅ Порядок выполнения кода
+
+// function multiply(x, y, z) {
+//   console.log(`Результат умножения равен ${x * y * z}`);
+// }
+
+// console.log("Лог до вызова функции multiply");
+// multiply(2, 3, 5); // Результат умножения равен 30
+// console.log("Лог после вызова функции multiply");
+
+// // Последовательность логов в консоли
+// // "Лог до вызова функции multiply"
+// // "Результат умножения равен 30"
+// // "Лог после вызова функции multiply"
+
+
+// *** ✅✅✅ Параметры по умолчанию
+
+// function count(countFrom = 0, countTo = 10, step = 1) {
+//   console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
+
+//   for (let i = countFrom; i <= countTo; i += step) {
+//     console.log(i);
+//   }
+// }
+
+// count(1, 5); // countFrom = 1, countTo = 5, step = 1
+// count(2); // countFrom = 2, countTo = 10, step = 1
+// count(); // countFrom = 0, countTo = 10, step = 1
+
+
+// *** ✅✅✅ Псевдомассив - arguments
+
+// function multiply() {
+//   let total = 0;
+
+//   for (const argument of arguments) {
+//     total += argument;
+//   }
+
+//   return total;
+// }
+
+// console.log(multiply(1, 2, 3)); //  6
+// console.log(multiply(1, 2, 3, 4)); //  10
+// console.log(multiply(1, 2, 3, 4, 5)); //  15
+
+
+//  ✅✅✅ *** Преобразование псевдомассива
+// Обычно псевдомассив необходимо преобразовать в полноценный массив, так как у псевдомассива нет методов массива, например slice() или includes(). 
+// На практике применяют несколько основных способов. Используя метод Array.from(), который создаст массив из псевдомассива.
+
+// function fn() {
+//   // В переменной args будет полноценный массив
+//     const args = Array.from(arguments);
+    
+// }
+
+// function fn(...args) {
+//   // В переменной args будет полноценный массив
+// }
+
+
+//  ✅✅✅ *** Паттерн «Ранний возврат»
+
+// function withdraw(amount, balance) {
+//   if (amount === 0) {
+//     console.log("Для проведения операции введите сумму больше нуля");
+//   } else if (amount > balance) {
+//     console.log("Недостаточно средств на счету");
+//   } else {
+//     console.log("Операция снятия средств проведена успешно");
+//   }
+// }
+
+// withdraw(0, 300); // "Для проведения операции введите сумму больше нуля"
+// withdraw(500, 300); // "Недостаточно средств на счету"
+// withdraw(100, 300); // "Операция снятия средств проведена успешно"
+
+
+// function withdraw(amount, balance) {
+//   // Если  условие выполняется, вызывается console.log
+//   // и выход из функции. Код идущий после тела if не выполнится.
+//   if (amount === 0) {
+//     console.log("Для проведения операции введите сумму больше нуля");
+//     return;
+//   }
+
+//   // Если условие первого if не выполнилось, его тело пропускается
+//   // и интерпретатор доходит до второго if.
+//   // Если условие выполняется, вызывается console.log и выход из функции.
+//   // Код идущий после тела if  не выполнится.
+//   if (amount > balance) {
+//     console.log("Недостаточно средств на счету");
+//     return;
+//   }
+
+//   // Если ни один из предыдущих if не выполнился,
+//   // интерпретатор доходит до этого кода и выполняет его.
+//   console.log("Операция снятия средств проведена");
+// }
+
+// withdraw(0, 300); // "Для проведения операции введите сумму больше нуля"
+// withdraw(500, 300); // "Недостаточно средств на счету"
+// withdraw(100, 300); // "Операция снятия средств проведена"
+
+
+//  ✅✅✅ *** Функциональное выражение
+
+// Объявление функции (function declaration)
+// function multiply(x, y, z) {
+//   console.log(`Результат умножения равен ${x * y * z}`);
+// }
+
+// // Функциональное выражение (function expression)
+// const multiply = function (x, y, z) {
+//   console.log(`Результат умножения равен ${x * y * z}`);
+// };
+
+// multiply(1, 2, 3);
+
+// //  Работает вызов до объявления
+// multiply(1, 2, 3);
+
+// function multiply(x, y, z) {
+//   console.log(`Результат умножения равен ${x * y * z}`);
+// }
+
+// //  Работает вызов после объявления
+// multiply(4, 5, 6);
+
+
+// ********************************** РЕПЕТА ✅✅✅
 
 // const friends = ['Mango', 'Kiwi', 'Apple', 'Banana'];
 // const lastIndex = friends.length - 1;
-
 
 // console.log(friends);
 
@@ -943,10 +1058,6 @@
 
 // friends[3] = 'Cherry';
 // console.log(friends);
-
-
-
-
 
 // let a = 10;
 // let b = a;
@@ -965,8 +1076,6 @@
 // console.log('a', a);
 // console.log('b', b);
 
-
-
 // const friends = ['Mango', 'Kiwi', 'Apple', 'Banana'];
 // console.table(friends);
 // // const lastIndex = friends.length - 1;
@@ -977,8 +1086,6 @@
 
 // console.table(friends);
 
-
-
 // const friends = ['Mango', 'Kiwi', 'Apple', 'Banana'];
 
 // for (let friend of friends) {
@@ -986,3 +1093,122 @@
 // }
 
 // console.table(friends);
+
+// ******************* Задачи Репета ✅✅✅
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+
+// // 1. сделать переменную total до цикла
+// let total = 0;
+
+// // 2. перебрать масив
+// for (let i = 0; i < cart.length; i += 1) {
+//     console.log(cart[i]);
+
+// // 3. каждый элемент приплюсовать к total
+//     total = total + cart[i];
+// }
+
+// console.log('Total: ', total);
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// let total = 0;
+// for (const value of cart) {
+//     total += value;
+// }
+
+// console.log('Total: ', total);
+
+//  дабавить такс
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+
+// let total = 0;
+
+// for (let i = 0; i < cart.length; i += 1) {
+//     cart[i] = Math.round(cart[i] * 1.1);    //  чтобы перезаписать что-то в элемент
+// }
+
+// // for (let value of cart) {
+// //     value = Math.round(value * 1.1);    // для простого доступа к элементу
+// // }
+
+// console.log(cart);
+
+// *** сумма всех четных чисел
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11];
+// let total = 0;
+
+// for (let i = 0; i < numbers.length; i += 1) {
+//     console.log(numbers[i]);
+
+//     if (numbers[i] % 2 === 0) {
+//         console.log('Четное!!!!');
+
+//         total += numbers[i];
+//     }
+// }
+
+// console.log('Total: ', total);
+
+// const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 14];
+// let total = 0;
+
+// // for (let i = 0; i < numbers.length; i += 1) {
+// //     const number = numbers[i];
+// //     console.log(number);
+
+// //     if (number % 2 === 0) {
+
+// //     console.log('Четное!!!!');
+
+// //     total += number;
+// //     }
+// // }
+
+// for (const number of numbers) {
+//     // console.log(number);
+
+//     if (number % 2 === 0) {
+//         console.log(`${number}- четное!!!!`);
+
+//     total += number;
+//     }
+// }
+
+// console.log('Total: ', total);
+
+// *** ищем логин✅
+
+// const logins = ["me", "you", "like", "kinder"];
+// const loginToFind = "like";
+// let message = `Пользователь ${loginToFind} не найден.`;
+
+// for (let i = 0; i < logins.length; i += 1) {
+//     const login = logins[i];
+
+//     console.log('Login: ', login);
+//     console.log(`${login} = ${loginToFind}: `, login === loginToFind);
+
+//     if (login === loginToFind) {
+//         console.log('УРА! Равны!!!');
+//         message = `Пользователь "${loginToFind}" найден.`;
+//         break;
+//     }
+// }
+
+// console.log(message);
+
+// **** Найти самое большое число в масиве
+
+// const numbers = [44, 78, 1, 854, 1254, 564, 9999, 5641, 23, 112, 3254, 213, 5, 4587];
+
+// let biggestNumber = numbers[0];
+
+// for (const number of numbers) {
+//     if (number > biggestNumber) {
+//         biggestNumber = number;
+//     }
+// }
+// console.log('biggestNumber: ', biggestNumber);
