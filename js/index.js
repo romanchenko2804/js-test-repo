@@ -1212,4 +1212,15 @@
 //     }
 // }
 // console.log('biggestNumber: ', biggestNumber);
-85
+
+
+
+
+
+// array.forEach(number =>
+// {
+//     newArray.push(number * 3);
+//     return newArray;
+// });
+    
+// console.log(newArray);
