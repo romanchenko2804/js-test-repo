@@ -1,3 +1,4 @@
+
 // 1
 // const add = (a, b) => {
 //     return a + b;
@@ -312,8 +313,18 @@ foo.bind(obj, arg1, arg2, ...)
 // }, PROP_DELAY);
 
 
-import BSN from 'bootstrap.native';
+// const date1 = new Date().getTime();
+// console.log('date1', date1);
 
-const modal = new BSN.Modal('#exampleModal');
+// setTimeout(() => {
+//     const date2 = new Date().getTime();
 
-console.log(modal);
+//     console.log('date2', date2);
+
+//     console.log(date2 - date1);
+// }, 3000);
+
+// setInterval(() => {
+//     const date3 = Date.now()
+//     console.log('date3', date3);
+// }, 1500);
