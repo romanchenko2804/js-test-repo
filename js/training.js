@@ -292,3 +292,28 @@ foo.bind(obj, arg1, arg2, ...)
 // ✅ Стало
 // makeMessage(customer.getFullName.bind(customer)); // Обрабатываем заявку от Jacob Mercer.
 
+// const PROP_DELAY = 1000;
+// const MAX_COUNT = 5;
+
+// let promptCounter = 0;
+// let hasSubscribed = false; // true
+
+// // let intervalId = null;
+
+// const intervalId = setInterval(() => {
+//     if (promptCounter === MAX_COUNT || hasSubscribed) {
+//         console.log('Останавливаем запрос!');
+//         clearInterval(intervalId);
+//         return;
+//     }
+
+//     console.log('Пoдпишись на рассылку! - ' + Date.now());
+//     promptCounter += 1;
+// }, PROP_DELAY);
+
+
+import BSN from 'bootstrap.native';
+
+const modal = new BSN.Modal('#exampleModal');
+
+console.log(modal);
